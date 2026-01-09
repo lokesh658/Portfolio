@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Lokesh Sharma</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Lokesh</div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/skills">Skills</a>
+    <a href="/projects" class="active">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<section class="page">
+  <h1>Projects & Work</h1>
+
+  <div class="card">
+    <h3>Real-time Streaming ETL Pipeline (Visa)</h3>
+    <p>
+      Worked on a high-throughput real-time ETL pipeline using
+      <strong>Apache Kafka</strong> and <strong>Spark Structured Streaming</strong>.
+      Improved end-to-end latency by nearly <strong>100x</strong> through
+      optimization of Kafka message serialization and deserialization.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>E-commerce Web Application</h3>
+    <p>
+      Built a full-stack e-commerce application using
+      <strong>Scala</strong> and <strong>Play Framework</strong>, with MongoDB
+      for data storage. Implemented authentication, shopping cart,
+      checkout flow, and Stripe-based payment integration.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Meet Hub – Video Conferencing Platform</h3>
+    <p>
+      Developed a web-based video conferencing platform with real-time
+      audio, video, chat, and collaborative whiteboard features using
+      WebRTC, Socket.IO, and PeerJS.
+    </p>
+  </div>
+</section>
+
+
+</body>
+</html>
