@@ -1,45 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Lokesh Sharma</title>
-  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh Sharma | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
+<!-- TOP NAVBAR -->
+<header class="topbar">
   <div class="logo">Lokesh</div>
-  <nav>
+
+  <nav class="top-links">
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/skills">Skills</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact" class="active">Contact</a>
+    <a href="https://www.linkedin.com/in/lokeshsharma001/" target="_blank">LinkedIn ↗</a>
+    <a href="https://drive.google.com/file/d/1Xwy5ZhOtNvCBrSjqzn0ExOdr-AaxmbEJ/view?usp=sharing" target="_blank">Resume ↗</a>
   </nav>
 </header>
 
-<section class="page">
-  <h1>Contact</h1>
+<!-- MAIN LAYOUT -->
+<div class="container">
 
-  <p>
-    I am open to discussions around backend development, data engineering,
-    and scalable system design.
-  </p>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h4>Sections</h4>
+    <ul>
+      <li><a href="/">Introduction</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/skills">Skills & Tools</a></li>
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/education">Education</a></li>
+      <li class="active"><a href="/contact">Contact</a></li>
+    </ul>
+  </aside>
 
-  <div class="card">
-    <p><strong>Email:</strong> lokesh15082002@gmail.com</p>
-    <p><strong>LinkedIn:</strong> linkedin.com/in/your-profile</p>
-    <p><strong>GitHub:</strong> github.com/your-github</p>
-  </div>
+  <!-- HERO SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <h2 class="contact-title">Contact</h2>
+      <p class="contact-subtitle">
+        Get in touch before I write another line of code!
+      </p>
 
+      <form class="contact-form">
+
+        <div class="form-group">
+          <label for="name">Name<span>*</span></label>
+          <input
+                  type="text"
+                  id="name"
+                  placeholder="Your name, your fame"
+                  required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email<span>*</span></label>
+          <input
+                  type="email"
+                  id="email"
+                  placeholder="Where can I reach you back?"
+                  required
+          />
+          <small>
+            Temporary emails are also accepted, unless you wish to hear back 😉
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message<span>*</span></label>
+          <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your words, my inbox."
+                  required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit</button>
+        <button type="reset" class="btn-secondary">Reset</button>
+
+      </form>
+
+      <div class="contact-nav">
+        <a href="/education">← Education</a>
+      </div>
+
+    </div>
+  </section>
+
+
+</div>
 
 </body>
 </html>

@@ -25,4 +25,12 @@ public class HomeController {
     public String projects(){
         return "projects";
     }
+    @GetMapping("/experience")
+    public String experience(){
+        return "experience";
+    }
+    @GetMapping("/education")
+    public String education(){
+        return "education";
+    }
 }

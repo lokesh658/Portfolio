@@ -1,46 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About | Lokesh Sharma</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokesh Sharma | Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
+<!-- TOP NAVBAR -->
+<header class="topbar">
     <div class="logo">Lokesh</div>
-    <nav>
+
+    <nav class="top-links">
         <a href="/">Home</a>
-        <a href="/about" class="active">About</a>
-        <a href="/skills">Skills</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <a href="https://www.linkedin.com/in/lokeshsharma001/" target="_blank">LinkedIn ↗</a>
+        <a href="https://drive.google.com/file/d/1Xwy5ZhOtNvCBrSjqzn0ExOdr-AaxmbEJ/view?usp=sharing" target="_blank">Resume ↗</a>
     </nav>
 </header>
 
-<section class="page">
-    <h1>About Me</h1>
+<!-- MAIN LAYOUT -->
+<div class="container">
 
-    <p>
-        I am a <strong>Software Developer / Data Engineer at Visa</strong> with hands-on experience
-        building and optimizing large-scale data processing systems.
-    </p>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h4>Sections</h4>
+        <ul>
+            <li><a href="/">Introduction</a></li>
+            <li class="active"><a href="/about">About Me</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills">Skills & Tools</a></li>
+            <li><a href="/experience">Experience</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </aside>
 
-    <p>
-        I graduated from <strong>IIT Guwahati</strong> with a B.Tech in Electronics and Electrical Engineering.
-        My core interests lie in backend development, distributed systems, and real-time data processing.
-    </p>
+    <!-- HERO SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="about-title">About Lokesh</h2>
+            <p class="about-subtitle">
+                More than just a title — let’s dive deeper!
+            </p>
 
-    <p>
-        In my current role, I work extensively with <strong>Java, Apache Kafka, Spark (Structured Streaming),
-        Hadoop ecosystems</strong>, and cloud-based data platforms to build reliable and high-performance pipelines.
-    </p>
+            <div class="about-content">
+                <p>
+                    I am a passionate Software Engineer with experience working in
+                    large-scale enterprise environments. Currently working as a
+                    Software Developer / Data Engineer, I enjoy building reliable,
+                    scalable backend systems and data-driven applications.
+                </p>
 
-    <p>
-        I enjoy solving complex system-level problems, improving performance, and designing scalable architectures.
-    </p>
-</section>
+                <p>
+                    I have hands-on experience with Java, Big Data technologies
+                    (Spark, Hadoop), SQL, and backend development. Alongside my
+                    professional work, I actively sharpen my skills through
+                    side projects, system design practice, and open-source learning.
+                </p>
 
+                <p>
+                    I thrive in problem-solving environments and enjoy understanding
+                    systems deeply — from database design to performance optimization.
+                    My long-term goal is to work on impactful products that solve
+                    real-world problems at scale.
+                </p>
+            </div>
+
+            <div class="about-nav">
+                <a href="/" class="nav-link">← Introduction</a>
+                <a href="/projects" class="nav-link">Projects →</a>
+            </div>
+        </div>
+    </section>
+
+
+</div>
 
 </body>
 </html>

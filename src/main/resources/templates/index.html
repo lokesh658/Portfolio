@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lokesh Sharma | Profile</title>
-  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh Sharma | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">
-    <Image src="/images/paramita_photo.jpeg" alt="Lokesh Logo" style="height:40px;"></Image>
-  </div>
-  <nav>
+<!-- TOP NAVBAR -->
+<header class="topbar">
+  <div class="logo">Lokesh</div>
+
+  <nav class="top-links">
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/skills">Skills</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contact</a>
+    <a href="https://www.linkedin.com/in/lokeshsharma001/" target="_blank">LinkedIn ↗</a>
+    <a href="https://drive.google.com/file/d/1Xwy5ZhOtNvCBrSjqzn0ExOdr-AaxmbEJ/view?usp=sharing" target="_blank">Resume ↗</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Hello, I'm <span>Lokesh Sharma</span></h1>
-    <p>Software Engineer | Backend Developer | Java & Spring Boot</p>
-    <div class="buttons">
-      <a href="/projects" class="btn primary">View Projects</a>
-      <a href="/contact" class="btn secondary">Contact Me</a>
-    </div>
-  </div>
-</section>
+<!-- MAIN LAYOUT -->
+<div class="container">
 
-<footer class="footer">
-  <p>© 2026 Lokesh Sharma | Built with Spring Boot</p>
-</footer>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h4>Sections</h4>
+    <ul>
+      <li class="active"><a href="/">Introduction</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/skills">Skills & Tools</a></li>
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/education">Education</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- HERO SECTION -->
+  <main class="content">
+    <h1>Lokesh Sharma</h1>
+
+    <h2 class="subtitle">
+      A coder by day, problem-solver by night!
+    </h2>
+
+    <p class="description">
+      I am a dedicated Software Engineer specializing in backend and data-intensive
+      application development. I enjoy crafting scalable systems using
+      Java, Scala, Spark, and SQL while continuously learning and improving
+      system design and performance.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="https://drive.google.com/file/d/1Xwy5ZhOtNvCBrSjqzn0ExOdr-AaxmbEJ/view?usp=sharing" target="_blank">Get Resume ↗</a>
+      <a class="btn secondary" href="mailto:lokesh15082002@gmail.com">✉ Send Mail</a>
+    </div>
+
+    <div class="next-link">
+      <a href="/about">About Me →</a>
+    </div>
+  </main>
+
+</div>
 
 </body>
 </html>

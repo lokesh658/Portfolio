@@ -1,53 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Skills | Lokesh Sharma</title>
-  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh Sharma | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
+<!-- TOP NAVBAR -->
+<header class="topbar">
   <div class="logo">Lokesh</div>
-  <nav>
+
+  <nav class="top-links">
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/skills" class="active">Skills</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contact</a>
+    <a href="https://www.linkedin.com/in/lokeshsharma001/" target="_blank">LinkedIn ↗</a>
+    <a href="https://drive.google.com/file/d/1Xwy5ZhOtNvCBrSjqzn0ExOdr-AaxmbEJ/view?usp=sharing" target="_blank">Resume ↗</a>
   </nav>
 </header>
 
-<section class="page">
-  <h1>Technical Skills</h1>
+<!-- MAIN LAYOUT -->
+<div class="container">
 
-  <div class="card">
-    <h3>Programming Languages</h3>
-    <p>Java, Scala, Python, C++, C</p>
-  </div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h4>Sections</h4>
+    <ul>
+      <li><a href="/">Introduction</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li class="active"><a href="/skills">Skills & Tools</a></li>
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/education">Education</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </aside>
 
-  <div class="card">
-    <h3>Big Data & Streaming</h3>
-    <p>Apache Kafka, Spark, Spark Structured Streaming, Hadoop, Hive, PySpark</p>
-  </div>
+  <!-- HERO SECTION -->
+  <section class="skills-section" id="skills">
+    <div class="skills-container">
 
-  <div class="card">
-    <h3>Backend & Web</h3>
-    <p>Spring Boot, REST APIs, Play Framework, HTML, CSS, JavaScript</p>
-  </div>
+      <h2 class="skills-title">Skills & Tools</h2>
+      <p class="skills-subtitle">
+        Built through real-world systems, data pipelines, and production debugging.
+      </p>
 
-  <div class="card">
-    <h3>Databases</h3>
-    <p>MySQL, MongoDB</p>
-  </div>
+      <p class="skills-desc">
+        As a Software Engineer with strong exposure to backend and data engineering,
+        I focus on building scalable systems, processing large datasets, and writing
+        efficient, maintainable code. My expertise lies in Java-based backend development,
+        Big Data processing, and SQL-driven data analysis.
+      </p>
 
-  <div class="card">
-    <h3>Tools & Platforms</h3>
-    <p>Git, Maven, Unix/Linux, Docker (basic), AWS (exposure)</p>
-  </div>
-</section>
+      <!-- Skill Groups -->
+      <div class="skills-groups">
 
-</section>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Java</span>
+            <span>Scala</span>
+            <span>SQL</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend & Frameworks</h3>
+          <div class="skill-tags">
+            <span>Spring Boot</span>
+            <span>REST APIs</span>
+            <span>Microservices</span>
+            <span>JPA / Hibernate</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Big Data & Processing</h3>
+          <div class="skill-tags">
+            <span>Apache Spark</span>
+            <span>Hadoop</span>
+            <span>Batch Processing</span>
+            <span>Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>MySQL</span>
+            <span>PostgreSQL</span>
+            <span>Hive</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span>Docker</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Maven</span>
+            <span>Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Practices</h3>
+          <div class="skill-tags">
+            <span>System Design</span>
+            <span>Performance Optimization</span>
+            <span>Debugging</span>
+            <span>Clean Code</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills-nav">
+        <a href="/projects">← Projects</a>
+        <a href="/experience">Experience →</a>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 
 </body>
 </html>

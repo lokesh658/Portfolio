@@ -1,56 +1,129 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects | Lokesh Sharma</title>
-  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh Sharma | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
+<!-- TOP NAVBAR -->
+<header class="topbar">
   <div class="logo">Lokesh</div>
-  <nav>
+
+  <nav class="top-links">
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/skills">Skills</a>
-    <a href="/projects" class="active">Projects</a>
-    <a href="/contact">Contact</a>
+    <a href="https://www.linkedin.com/in/lokeshsharma001/" target="_blank">LinkedIn ↗</a>
+    <a href="https://drive.google.com/file/d/1Xwy5ZhOtNvCBrSjqzn0ExOdr-AaxmbEJ/view?usp=sharing" target="_blank">Resume ↗</a>
   </nav>
 </header>
 
-<section class="page">
-  <h1>Projects & Work</h1>
+<!-- MAIN LAYOUT -->
+<div class="container">
 
-  <div class="card">
-    <h3>Real-time Streaming ETL Pipeline (Visa)</h3>
-    <p>
-      Worked on a high-throughput real-time ETL pipeline using
-      <strong>Apache Kafka</strong> and <strong>Spark Structured Streaming</strong>.
-      Improved end-to-end latency by nearly <strong>100x</strong> through
-      optimization of Kafka message serialization and deserialization.
-    </p>
-  </div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h4>Sections</h4>
+    <ul>
+      <li><a href="/">Introduction</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li class="active"><a href="/projects">Projects</a></li>
+      <li><a href="/skills">Skills & Tools</a></li>
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/education">Education</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </aside>
 
-  <div class="card">
-    <h3>E-commerce Web Application</h3>
-    <p>
-      Built a full-stack e-commerce application using
-      <strong>Scala</strong> and <strong>Play Framework</strong>, with MongoDB
-      for data storage. Implemented authentication, shopping cart,
-      checkout flow, and Stripe-based payment integration.
-    </p>
-  </div>
+  <!-- HERO SECTION -->
+  <section class="projects-section" id="projects">
+    <div class="projects-container">
 
-  <div class="card">
-    <h3>Meet Hub – Video Conferencing Platform</h3>
-    <p>
-      Developed a web-based video conferencing platform with real-time
-      audio, video, chat, and collaborative whiteboard features using
-      WebRTC, Socket.IO, and PeerJS.
-    </p>
-  </div>
-</section>
+      <h2 class="projects-title">Projects</h2>
+      <p class="projects-subtitle">
+        Built to learn, scaled to understand real systems.
+      </p>
 
+      <p class="projects-desc">
+        These projects reflect my focus on backend development, data processing,
+        and system-level problem solving. Each one helped me understand how real
+        applications handle scale, performance, and reliability.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Batch Data Processing Pipeline</h3>
+          <p class="project-meta">Java · Apache Spark · SQL</p>
+          <p class="project-desc">
+            Designed and implemented a batch data processing pipeline to ingest,
+            transform, and analyze large datasets using Apache Spark. Focused on
+            performance optimization and clean data transformations.
+          </p>
+          <a href="#" class="project-link">Learn More →</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Order Analytics System</h3>
+          <p class="project-meta">Java · Spring Boot · SQL</p>
+          <p class="project-desc">
+            Built a backend service to process and analyze order data using REST APIs
+            and relational databases. Implemented optimized SQL queries and handled
+            edge cases for real-world data.
+          </p>
+          <a href="#" class="project-link">Learn More →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>SQL Performance Optimization Case Study</h3>
+          <p class="project-meta">SQL · Indexing · Query Tuning</p>
+          <p class="project-desc">
+            Analyzed slow-running SQL queries and improved performance through
+            indexing strategies, query refactoring, and execution plan analysis.
+          </p>
+          <a href="#" class="project-link">Learn More →</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <h3>Asynchronous Order Management System</h3>
+          <p class="project-meta">Scala · Futures · Functional Programming</p>
+          <p class="project-desc">
+            Implemented an asynchronous order management system using Scala Futures
+            to handle concurrent operations, failures, and retries in a clean and
+            functional manner.
+          </p>
+          <a href="#" class="project-link">Learn More →</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <h3>Portfolio Backend & API</h3>
+          <p class="project-meta">Spring Boot · REST · Docker</p>
+          <p class="project-desc">
+            Developed backend APIs for a personal portfolio, including contact
+            handling and data storage. Containerized the application using Docker
+            for consistent deployment.
+          </p>
+          <a href="#" class="project-link">Learn More →</a>
+        </div>
+
+      </div>
+
+      <div class="projects-nav">
+        <a href="/about">← About</a>
+        <a href="/skills">Skills & Tools →</a>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 
 </body>
 </html>
